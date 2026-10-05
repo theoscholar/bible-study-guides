@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeremiah Under Siege — From the Dungeon to Freedom</title>
+<style>
+  :root{--p:#E8E6E0;--s:#B4B2A9;--muted:#9C9A92;--line:#3A3A38;--bg:#000000;--surface:#1A1A18;
+    --accent:#85B7EB;--warning:#EF9F27;--danger:#F09595;--good:#9BD19B;}
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--p);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7;font-size:16px;}
+  main{max-width:860px;margin:0 auto;padding:40px 24px 72px;}
+  h1{font-size:26px;font-weight:600;line-height:1.3;margin:0 0 4px;}
+  h2{font-size:19px;font-weight:600;margin:36px 0 10px;padding-top:14px;border-top:1px solid var(--line);}
+  h2 .num{color:var(--accent);font-weight:600;margin-right:8px;}
+  h3{font-size:15px;font-weight:600;margin:18px 0 4px;color:var(--s);}
+  p{margin:12px 0;}
+  .subtitle{color:var(--s);font-size:14px;margin:0 0 8px;}
+  .intro{color:var(--p);font-size:15px;}
+  a{color:var(--accent);text-decoration:none;} a:hover{text-decoration:underline;}
+  code{background:#33322F;padding:1px 5px;border-radius:4px;font-size:0.9em;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;}
+  strong{color:var(--p);font-weight:600;}
+  em{color:var(--s);}
+  ul{padding-left:22px;} li{margin:8px 0;}
+  .callout{background:var(--surface);border-left:3px solid var(--accent);border-radius:6px;
+    padding:14px 18px;margin:18px 0;}
+  .callout .kt{font-size:15px;font-style:italic;color:var(--p);}
+  .callout .meta{font-size:13px;color:var(--s);margin-top:6px;}
+  table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px;}
+  th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top;}
+  th{background:var(--surface);color:var(--s);font-weight:600;}
+  td .ref,.ref{color:var(--accent);}
+  .verse{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--good);
+    border-radius:6px;padding:10px 16px;margin:12px 0;}
+  .verse .cite{display:block;font-size:12px;font-weight:600;letter-spacing:.04em;
+    text-transform:uppercase;color:var(--good);margin-bottom:4px;}
+  .verse p{margin:0;font-size:14.5px;color:var(--p);font-style:italic;line-height:1.6;}
+  .benefit li strong{color:var(--accent);}
+  .note{color:var(--s);font-size:14px;}
+  a.scripture{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);cursor:pointer;}
+  a.scripture:hover{border-bottom-style:solid;}
+  .verse .cite a.scripture{color:var(--good);border-bottom-color:var(--good);}
+  .tl-wrap{margin:18px 0 8px;}
+  .tl-head{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--s);margin:0 0 12px;}
+  .timeline{position:relative;padding-left:6px;}
+  .timeline:before{content:"";position:absolute;left:12px;top:8px;bottom:14px;width:2px;background:var(--line);}
+  .tl-item{position:relative;padding:5px 0 5px 34px;}
+  .tl-dot{position:absolute;left:6px;top:10px;width:13px;height:13px;border-radius:50%;
+    background:var(--muted);border:2px solid var(--bg);box-shadow:0 0 0 1px var(--line);}
+  .tl-item.key .tl-dot{background:var(--accent);box-shadow:0 0 0 1px var(--accent);}
+  .tl-item.future .tl-dot{background:var(--good);box-shadow:0 0 0 1px var(--good);}
+  .tl-date{font-weight:600;color:var(--p);font-size:13.5px;white-space:nowrap;}
+  .tl-item.key .tl-date{color:var(--accent);}
+  .tl-item.future .tl-date{color:var(--good);}
+  .tl-ev{color:var(--s);font-size:14px;}
+  .tl-item.key .tl-ev strong{color:var(--p);}
+  .tl-legend{font-size:12px;color:var(--muted);margin:12px 0 0 6px;}
+  .tl-legend .k{color:var(--accent);} .tl-legend .f{color:var(--good);}
+  @media(max-width:640px){table{font-size:13px;}}
+
+  .flag{font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--warning);border:1px solid var(--warning);
+    border-radius:4px;padding:1px 6px;margin-right:4px;white-space:nowrap;}
+  h3{font-size:16px;color:var(--accent);margin:26px 0 6px;}
+  @media print{
+    @page{size:letter;margin:14mm 13mm;}
+    *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;}
+    :root{--p:#1b1b1a;--s:#4a4a47;--muted:#6b6b67;--line:#d6d3cc;--bg:#ffffff;--surface:#f4f1ea;
+      --accent:#1f5fa8;--warning:#b5651d;--danger:#b33a3a;--good:#2f7a3f;}
+    body{font-size:11pt;line-height:1.5;}
+    main{max-width:none;padding:0;}
+    code{background:#eee;}
+    h2,h3{break-after:avoid;}
+    .verse,.callout,tr,.tl-item{break-inside:avoid;}
+    a.scripture{border-bottom:none;}
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Jeremiah Under Siege — From the Dungeon to Freedom</h1>
+<p class="subtitle"><em>Topical study note · compiled Sep 27, 2026 · Jeremiah 21, 32, 34, 37-40, and 52, read in the order the events happened</em></p>
+
+<div class="callout">
+  <div class="kt">"And they will certainly fight against you, But they will not prevail against you, For 'I am with you,' declares Jehovah, 'to save you.'"</div>
+  <div class="meta">Key text — Jeremiah 1:19 (the promise made at Jeremiah's commissioning, some 40 years before these events)</div>
+</div>
+
+<p class="intro"><strong>Focus:</strong> The book of Jeremiah is not arranged in time order, so the events of the last siege are spread across several chapters. This note puts them back in sequence. It follows the siege from start to finish: Jeremiah's warnings to Zedekiah, Egypt's army, Babylon's short withdrawal, Jeremiah's attempt to leave the city, and his arrest, beating, dungeon, daily bread, and the field he bought while under guard. Then come the fall of the city and his release, first on Nebuchadnezzar's orders and then by Nebuzaradan at Ramah. Along the way it draws out how differently he was treated by his own people and by the foreigners who conquered them, how completely Jehovah proved him right, and what that means for us.</p>
+
+<h2><span class="num">1.</span>Create context — when, who, and what was going on</h2>
+
+<p><strong>When.</strong> The siege began "in the ninth year of Zedekiah's reign, in the tenth month, on the tenth day of the month" (52:4) — <strong>609 B.C.E.</strong> The wall was breached "in the 11th year of Zedekiah, in the fourth month, on the ninth day of the month" (39:2) — <strong>607 B.C.E.</strong> The <em>jr</em> book calls it "the 18-month siege" (<em>jr</em> 93 ¶4). About a month later Nebuzaradan arrived and burned the city (2 Ki. 25:8; 52:12, 13).</p>
+
+<div class="tl-wrap">
+  <p class="tl-head">Timeline — the last siege of Jerusalem, in sequence (JW chronology)</p>
+  <div class="timeline">
+    <div class="tl-item"><span class="tl-dot"></span><span class="tl-date">617 B.C.E.</span> — <span class="tl-ev">Nebuchadnezzar makes Zedekiah king and has him swear loyalty in Jehovah's name (2 Chron. 36:10, 13; Ezek. 17:12-14).</span></div>
+    <div class="tl-item"><span class="tl-dot"></span><span class="tl-date">c. 609 B.C.E.</span> — <span class="tl-ev">Zedekiah rebels and "sent to Egypt for military assistance" (<em>it-2</em> 1227; Ezek. 17:15).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">609 B.C.E. · 10th month (Tebeth), day 10</span> — <span class="tl-ev"><strong>The siege begins.</strong> A siege wall goes up all around the city (52:4; 2 Ki. 25:1).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">Early in the siege</span> — <span class="tl-ev"><strong>Warning 1:</strong> Zedekiah sends Pashhur and Zephaniah to ask whether Babylon will withdraw. Jehovah answers: "the way of life and the way of death" (21:1-10).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">While Lachish and Azekah still stand</span> — <span class="tl-ev"><strong>Warning 2:</strong> Jeremiah tells Zedekiah in person that he "will see the king of Babylon eye to eye" (34:1-7).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">c. 608 B.C.E.</span> — <span class="tl-ev"><strong>Egypt approaches; Babylon withdraws</strong> (37:5). The slaveholders take back the slaves they had freed (34:8-22).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">During the withdrawal</span> — <span class="tl-ev"><strong>Warning 3:</strong> Jehovah: Egypt's army "will have to go back"; the Chaldeans "will come back" (37:3-10).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">During the withdrawal</span> — <span class="tl-ev"><strong>Jeremiah leaves for Benjamin</strong>, is seized at the Gate of Benjamin, falsely accused, beaten, and put in the dungeon of Jehonathan's house "many days" (37:11-16).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">Siege resumed</span> — <span class="tl-ev"><strong>Warning 4:</strong> Secret meeting with Zedekiah: "There is!… You will be given into the hand of the king of Babylon!" Jeremiah is moved to the Courtyard of the Guard and <strong>given a round loaf daily</strong> (37:17-21).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">608-607 B.C.E. · Zedekiah's 10th year</span> — <span class="tl-ev"><strong>Jeremiah buys Hanamel's field</strong> in Anathoth, with deed, seal and witnesses, while "confined in the Courtyard of the Guard" (32:1-15).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">Late in the siege</span> — <span class="tl-ev">The princes have him lowered into a muddy cistern; <strong>Ebed-melech rescues him</strong> (38:1-13).</span></div>
+    <div class="tl-item key"><span class="tl-dot"></span><span class="tl-date">Shortly after</span> — <span class="tl-ev"><strong>Warning 5, the last:</strong> "Obey, please, the voice of Jehovah." Zedekiah refuses. Jeremiah stays in the Courtyard "until the day that Jerusalem was captured" (38:14-28).</span></div>
+    <div class="tl-item future"><span class="tl-dot"></span><span class="tl-date">607 B.C.E. · 4th month (Tammuz), day 9</span> — <span class="tl-ev"><strong>The wall is breached.</strong> Famine is severe. Zedekiah flees by night, is caught near Jericho, sees his sons killed at Riblah, and is blinded (39:1-7; 52:6-11).</span></div>
+    <div class="tl-item future"><span class="tl-dot"></span><span class="tl-date">607 B.C.E. · 5th month (Ab), days 7-10</span> — <span class="tl-ev"><strong>Nebuzaradan arrives</strong> about a month after the breach (2 Ki. 25:8; <em>it-2</em> 482) and burns the temple, the king's house and all the houses of Jerusalem (52:12, 13).</span></div>
+    <div class="tl-item future"><span class="tl-dot"></span><span class="tl-date">607 B.C.E.</span> — <span class="tl-ev"><strong>Nebuchadnezzar's order carried out:</strong> "Take him and look after him; do him no harm." Nebuzaradan and Babylon's principal men take Jeremiah out of the Courtyard and hand him to Gedaliah (39:11-14).</span></div>
+    <div class="tl-item future"><span class="tl-dot"></span><span class="tl-date">607 B.C.E.</span> — <span class="tl-ev"><strong>Jeremiah is caught up among the exiles in handcuffs at Ramah; Nebuzaradan frees him</strong>, gives him his choice, a food allowance and a gift. He goes to Gedaliah at Mizpah (40:1-6).</span></div>
+  </div>
+  <p class="tl-legend"><span class="k">&#9679;</span> The siege and Jeremiah's treatment &nbsp;&middot;&nbsp; <span class="f">&#9679;</span> The fall and Jeremiah's release &nbsp;&middot;&nbsp; <span>&#9679;</span> Surrounding history</p>
+</div>
+<p class="note">The order of the siege-period chapters follows <em>Insight</em>, "Zedekiah" No. 4 (<em>it-2</em> 1227-1228), which places 21:1-10 "at the commencement of this siege," then 34:1-7, then 34:8-22 and 37:3-10 at the time of the Egyptian approach, then 37:11-21 with 32:1-5. Hebrew month names and their approximate equivalents: Tebeth (Dec-Jan), Tammuz (Jun-Jul), Ab (Jul-Aug).</p>
+
+<p><strong>Who — the main characters:</strong></p>
+<table>
+  <tr><th>Person</th><th>Who they were</th><th>In the account</th></tr>
+  <tr><td><strong>Jehovah</strong></td><td>The God who warned, provided for, protected and finally vindicated his prophet</td><td class="ref">throughout</td></tr>
+  <tr><td><strong>Jeremiah</strong></td><td>Priest's son from Anathoth in Benjamin; a prophet for some 40 years by now</td><td class="ref">throughout</td></tr>
+  <tr><td><strong>King Zedekiah</strong></td><td>Judah's last king; "a spineless, vacillating ruler dominated by his princes and his own fears" (<em>jr</em> 29, box)</td><td class="ref">21; 32; 34; 37; 38; 39</td></tr>
+  <tr><td><strong>The princes</strong></td><td>Judah's officials, who beat and imprisoned Jeremiah and later tried to kill him</td><td class="ref">37:15; 38:1-6</td></tr>
+  <tr><td><strong>Pharaoh (Hophra)</strong></td><td>King of Egypt, whose army marched out and then went home (named at 44:30)</td><td class="ref">37:5-7</td></tr>
+  <tr><td><strong>Irijah son of Shelemiah</strong></td><td>Officer at the Gate of Benjamin who arrested Jeremiah "on the false charge of intending to desert" (<em>it-1</em> 1215)</td><td class="ref">37:13, 14</td></tr>
+  <tr><td><strong>Jehonathan the secretary</strong></td><td>Official whose house "had been made into a prison"</td><td class="ref">37:15, 20</td></tr>
+  <tr><td><strong>Hanamel</strong></td><td>Jeremiah's cousin, who sold him the family field in Anathoth</td><td class="ref">32:7-12</td></tr>
+  <tr><td><strong>Ebed-melech</strong></td><td>Ethiopian court official who rescued Jeremiah from the cistern</td><td class="ref">38:7-13; 39:15-18</td></tr>
+  <tr><td><strong>Nebuchadnezzar</strong></td><td>King of Babylon; gave the order to protect Jeremiah</td><td class="ref">39:5-7, 11, 12</td></tr>
+  <tr><td><strong>Nebuzaradan</strong></td><td>"Chief of the bodyguard and principal figure in Nebuchadnezzar's forces at the actual destruction of Jerusalem" (<em>it-2</em> 482)</td><td class="ref">39:9-14; 40:1-5; 52:12-16</td></tr>
+  <tr><td><strong>Gedaliah son of Ahikam</strong></td><td>Grandson of Shaphan; made governor of those left in the land</td><td class="ref">39:14; 40:5, 6</td></tr>
+</table>
+
+<p><strong>What was going on.</strong> "Judah was now split into opposing factions—those who favored submission to Babylon and those who urged rebellion. In 609 B.C.E., Zedekiah did rebel by seeking military assistance from Egypt. Jeremiah then had to contend with the nationalistic hysteria of those supporting the rebellion." (<em>jr</em> 27-28 ¶22) Jeremiah's message was the opposite of what the war party wanted to hear: the city would fall, and anyone who surrendered would live.</p>
+
+<h2><span class="num">2.</span>The account step by step — with commentary</h2>
+
+<h3>1 · The siege begins, and Jeremiah's first warning (21:1-10)</h3>
+<p>Zedekiah's opening question was whether Jehovah might act "in harmony with all his wonderful works" and make Nebuchadnezzar withdraw (21:2). Jehovah's answer was the reverse: he himself would fight against the city (21:5). But the answer also gave a way out, and that way out became the heart of Jeremiah's message for the rest of the siege:</p>
+<div class="verse"><span class="cite">Jeremiah 21:8-10</span><p>"And to this people you should say, 'This is what Jehovah says: "Here I am putting before you the way of life and the way of death. Those who remain in this city will die by the sword, by famine, and by pestilence. But whoever goes out and surrenders to the Chaldeans who are besieging you will keep living, and he will have his life as a spoil."' '"For I have set my face against this city for calamity and not for good," declares Jehovah. "It will be given into the hand of the king of Babylon, and he will burn it with fire."</p></div>
+<p><strong>Commentary.</strong> "Surrender and live" was not treason. It was obedience to God, who had placed the nation under Babylon's yoke (27:12). To the princes it sounded like treason, though, and that is the root of everything Jeremiah suffered from here on.</p>
+
+<h3>2 · A personal warning to the king (34:1-7)</h3>
+<p>Jehovah then sent Jeremiah to Zedekiah face to face, while the Babylonians were fighting "against Lachish and against Azekah; for they were the only fortified cities that remained" (34:7).</p>
+<div class="verse"><span class="cite">Jeremiah 34:2, 3</span><p>"This is what Jehovah the God of Israel says, 'Go and speak to King Zedekiah of Judah and tell him: "This is what Jehovah says, 'Here I am giving this city into the hand of the king of Babylon, and he will burn it with fire. And you will not escape out of his hand, for you will without fail be caught and handed over to him. And you will see the king of Babylon eye to eye, and he will speak to you face-to-face, and you will go to Babylon.'</p></div>
+<p><strong>A voice from the ruins.</strong> Pottery letters found at Lachish seem to date from these very months. Letter IV, from an outpost to the commander at Lachish, reads: "We are watching for the signals of Lachish, according to all the indications which my lord hath given, for we cannot see Azekah." Insight comments: "This message suggests that Azekah had already been taken so that no signals were received from there." (<em>it-2</em> 188, "Lachish")</p>
+
+<h3>3 · Egypt approaches — Babylon retreats (37:5; 34:8-22)</h3>
+<div class="verse"><span class="cite">Jeremiah 37:5</span><p>"Now Pharaoh's army had set out from Egypt, and the Chaldeans who were besieging Jerusalem heard the report about them. So they withdrew from against Jerusalem."</p></div>
+<p>To the city it must have looked like rescue. The clearest sign of how people read the moment is what the slaveholders did. Earlier in the siege they had made a covenant to free their Hebrew slaves; now they took them back. Insight explains: "Apparently believing that the Babylonians would be defeated and unable to resume the siege, those who had released enslaved Hebrews felt that the danger was over and, therefore, again brought freed Hebrew slaves into servitude." (<em>it-2</em> 1227) Jehovah's reply was pointed. He would bring back "the armies of the king of Babylon, who are withdrawing from against you" (34:21, 22).</p>
+
+<h3>4 · Jehovah's answer: "Do not deceive yourselves" (37:3-10)</h3>
+<p>Zedekiah asked Jeremiah to pray for the people. Evidently he hoped the foretold destruction could still be avoided without surrender (<em>it-2</em> 1228). Jehovah's reply left no room for false hope:</p>
+<div class="verse"><span class="cite">Jeremiah 37:7-10</span><p>"This is what Jehovah the God of Israel says, 'This is what you should say to the king of Judah, who sent you to me to inquire of me: "Look! The army of Pharaoh that is coming to assist you will have to go back to its land, Egypt. And the Chaldeans will come back and fight against this city and capture it and burn it with fire." This is what Jehovah says, "Do not deceive yourselves by saying, 'The Chaldeans will surely go away from against us,' because they will not go away. Even if you were to strike down the entire army of the Chaldeans who are fighting against you and only their wounded men were left, they would still rise up from their tents and burn this city with fire."'"</p></div>
+<p><strong>Commentary.</strong> Jeremiah's message did not change when the circumstances seemed to. A lull is not a reversal, and Jehovah's word is not cancelled by a change in the headlines.</p>
+
+<h3>5 · Jeremiah tries to leave the city — and why (37:11, 12)</h3>
+<div class="verse"><span class="cite">Jeremiah 37:11, 12</span><p>"When the Chaldean army had withdrawn from against Jerusalem because of Pharaoh's army, Jeremiah set out from Jerusalem to the land of Benjamin to receive his portion there among his people."</p></div>
+<p><strong>The reason is stated in the text:</strong> "to receive his portion there among his people." Jeremiah was from Anathoth, a priestly city "located in Benjamin's territory less than 5 km (3 mi) NNE of the Temple Mount" (<em>it-2</em> 30). He was going home on family business. He was not running away, and he was not going over to the enemy. The Babylonians had pulled back, so the road was open.</p>
+<p><span class="flag">INFERENCE</span> What that "portion" was, the verse does not say. It may have concerned family property in Anathoth, the same kind of family land that Hanamel later asked him to buy back (32:7, 8). The connection is suggestive but not stated by the publications I consulted.</p>
+
+<h3>6 · Falsely accused at the Gate of Benjamin (37:13, 14)</h3>
+<div class="verse"><span class="cite">Jeremiah 37:13, 14</span><p>"But when he reached the Gate of Benjamin, the officer in charge of the guard, whose name was Irijah the son of Shelemiah the son of Hananiah, seized Jeremiah the prophet and said: "You are deserting to the Chaldeans!" But Jeremiah said: "It is not true! I am not deserting to the Chaldeans." But he did not listen to him. So Irijah arrested Jeremiah and brought him in to the princes."</p></div>
+<p><strong>Commentary.</strong> The accusation was plausible on the surface. He was the man who told everyone to go out to the Chaldeans, and here he was, going out, through the gate that faced north toward Benjamin. But it was false. Jeremiah's answer is short and calm: "It is not true!" He neither argues at length nor retaliates. Irijah "did not listen." As <em>jr</em> puts it: "The princes of Judah claimed that Jeremiah was throwing in his lot with the Babylonians." (<em>jr</em> 28 ¶23)</p>
+
+<h3>7 · Beaten and thrown into the dungeon (37:15, 16)</h3>
+<div class="verse"><span class="cite">Jeremiah 37:15, 16</span><p>"The princes were furious with Jeremiah, and they beat him and imprisoned him in the house of Jehonathan the secretary, which had been made into a prison. Jeremiah was put into the dungeon, into the vaulted rooms, and he remained there many days."</p></div>
+<p>The Hebrew for "dungeon" is literally "the house of the cistern" (NWT footnote on 37:16). Insight describes it: "This place of confinement had 'vaulted rooms,' perhaps dungeon cells. Conditions were so bad there that Jeremiah feared for his life." (<em>it-2</em> 690, "Prison") No trial is recorded. The men who beat him were Judah's own princes, not Babylonians.</p>
+
+<h3>8 · A secret audience — and a message he would not soften (37:17-20)</h3>
+<p>"Then King Zedekiah sent for him, and the king secretly questioned him in his house. He asked, 'Is there any word from Jehovah?' Jeremiah said, 'There is!' and he continued, 'You will be given into the hand of the king of Babylon!'" (37:17)</p>
+<p><strong>Commentary.</strong> This was his one chance to win favor with the only man who could free him, and he used it to repeat the unwelcome message word for word. "Jeremiah would still not soften Jehovah's message." (<em>jr</em> 28 ¶23) Then, and only then, he asked for fair treatment. He appealed respectfully and lawfully:</p>
+<div class="verse"><span class="cite">Jeremiah 37:18-20</span><p>"Jeremiah also said to King Zedekiah: "How have I sinned against you and against your servants and against this people, so that you have put me into the prison? Where, now, are your prophets who prophesied to you, 'The king of Babylon will not come against you and against this land'? Now listen, please, O my lord the king. May you grant, please, my request for favor. Do not send me back to the house of Jehonathan the secretary, or I will die there."</p></div>
+<p>Notice the question in verse 19. The Babylonians <em>had</em> come back. The prophets who promised otherwise had been proved false, and Jeremiah was the one in prison.</p>
+
+<h3>9 · The Courtyard of the Guard — bread every day (37:21)</h3>
+<div class="verse"><span class="cite">Jeremiah 37:21</span><p>"So King Zedekiah ordered that Jeremiah be put in custody in the Courtyard of the Guard, and he was given a round loaf of bread daily from the street of the bakers until all the bread in the city was gone. And Jeremiah remained in the Courtyard of the Guard."</p></div>
+<p>"Had he been free, he could have searched for it. Instead, he was totally dependent on those around him, most of whom hated him! Still, Jeremiah trusted not in men but in God, who promised to care for him. Did Jehovah live up to his word? Absolutely!" (<em>w08</em> 10/15 11 ¶18) "Jehovah can use whatever means he chooses to sustain his people. But sustain his people he will." (<em>jr</em> 112-113 ¶19)</p>
+<p>In the Courtyard, Insight notes, Jeremiah "got a daily allowance of bread, could receive visitors, and was able to conduct business transactions." (<em>it-2</em> 690) That last detail leads to the next event.</p>
+
+<h3>10 · Buying a field in a land about to fall (32:1-15)</h3>
+<p>"In the 10th year of King Zedekiah," with the siege back on and Jeremiah "confined in the Courtyard of the Guard" (32:1, 2), Jehovah told him that his cousin Hanamel would come and offer him the family field in Anathoth. Hanamel came, "just as Jehovah had said."</p>
+<div class="verse"><span class="cite">Jeremiah 32:8, 9</span><p>"Hanamel the son of my uncle came to me, just as Jehovah had said, into the Courtyard of the Guard, and he said to me: "Please buy my field in Anathoth, in the land of Benjamin, for you have the right to take possession of it and to repurchase it. Buy it for yourself." At that I knew that this was by the word of Jehovah. So I bought the field in Anathoth from Hanamel the son of my uncle. I weighed out the money to him, seven shekels and ten silver pieces."</p></div>
+<p>The purchase was done with full legal care: a sealed deed and an open copy, witnesses, weighed silver, and both documents stored in an earthenware jar "so that they may be kept for a long time" (32:10-14). The reason:</p>
+<div class="verse"><span class="cite">Jeremiah 32:15</span><p>"For this is what Jehovah of armies, the God of Israel, says, 'Houses and fields and vineyards will again be bought in this land.'"</p></div>
+<p><strong>Was it lawful for one Levite to sell land to another?</strong> Yes. "Jehovah himself affirmed that 'the field' in question belonged to Hanamel and that Jeremiah had 'the right of repurchase.' (Jeremiah 32:6, 7) Jehovah used this transaction symbolically in order to reinforce his promise that the Israelites would return to reclaim their inheritance of the land after a period of exile in Babylon." (<em>w04</em> 3/1 29)</p>
+<p><strong>Commentary.</strong> The man everyone accused of abandoning his country spent his own silver on a piece of it, and did so publicly, "in the presence of… all the Jews who were sitting in the Courtyard of the Guard" (32:12). That act answered the charge of desertion better than any argument could.</p>
+
+<h3>11 · The cistern, and a foreigner's rescue (38:1-13)</h3>
+<p>The princes went further, saying he was "weakening the morale of the soldiers," and Zedekiah gave in: "He is in your hands" (38:4, 5). They lowered Jeremiah into a cistern with "no water… only mud." (38:6) The Ethiopian court official Ebed-melech appealed to the king publicly at the Gate of Benjamin and pulled him out with 30 men and worn-out rags to pad the ropes (38:7-13). "It is not likely that 30 men were needed to pull Jeremiah out of the cistern. But, in view of the intense hatred for the prophet and his message, there was a strong possibility of interference from those who wanted Jeremiah dead." (<em>w79</em> 1/15 29) <span class="note">(Covered in full in the separate Jeremiah 38-39 note.)</span></p>
+
+<h3>12 · The last appeal, and the last refusal (38:14-28)</h3>
+<p>Zedekiah met Jeremiah once more in secret, heard "Obey, please, the voice of Jehovah… and it will go well with you" (38:20), admitted he was afraid of the Jews who had deserted (38:19), and did nothing. "Until the day that Jerusalem was captured, Jeremiah remained in the Courtyard of the Guard; he was still there when Jerusalem was captured." (38:28)</p>
+
+<h3>13 · Jerusalem falls (39:1-10; 52:6-13)</h3>
+<div class="verse"><span class="cite">Jeremiah 52:6, 7</span><p>"In the fourth month, on the ninth day of the month, the famine was severe in the city, and there was no food for the people of the land. Finally the city wall was broken through, and all the soldiers fled from the city by night through the gate between the double wall near the king's garden, while the Chaldeans were surrounding the city; and they continued by the way of the Arabah."</p></div>
+<p>Zedekiah was caught in the plains of Jericho and brought to Nebuchadnezzar at Riblah. There he saw his sons killed, then was blinded and taken to Babylon in copper fetters (39:5-7). "As Zedekiah was only about 32 years of age at the time, the boys could not have been very old." (<em>it-2</em> 1228) About a month later Nebuzaradan arrived. He "came into Jerusalem" on the tenth day of the fifth month, "and, after an inspection, put a torch to the house of Jehovah and reduced the city to ashes." (<em>it-2</em> 482; 52:12, 13)</p>
+
+<h3>14 · Nebuchadnezzar's command (39:11-14)</h3>
+<div class="verse"><span class="cite">Jeremiah 39:11-14</span><p>"Now King Nebuchadnezzar of Babylon gave Nebuzaradan the chief of the guard these orders concerning Jeremiah: "Take him and look after him; do him no harm, and grant whatever he asks of you." So Nebuzaradan the chief of the guard, Nebushazban the Rabsaris, Nergal-sharezer the Rabmag, and all the principal men of the king of Babylon sent and had Jeremiah taken out of the Courtyard of the Guard and handed him over to Gedaliah the son of Ahikam the son of Shaphan to be brought to his house. So he lived among the people."</p></div>
+<p><strong>Commentary.</strong> Three orders: <em>look after him, do him no harm, grant whatever he asks.</em> Judah's king had kept Jeremiah alive on a loaf a day, and only for as long as it suited him. Babylon's king gave him a blank cheque. It took the most senior officials of the conquering army to walk into the Courtyard and set him free.</p>
+
+<h3>15 · In handcuffs at Ramah — Nebuzaradan's words and Jeremiah's freedom (40:1-6)</h3>
+<p>In the confusion of the deportation Jeremiah ended up among the captives. "Later, Jeremiah got mixed in with some Jews being taken off into captivity, but he was released." (<em>jr</em> 30 ¶25) At Ramah, Nebuzaradan found him "bound with handcuffs" and spoke to him:</p>
+<div class="verse"><span class="cite">Jeremiah 40:2-4</span><p>"Then the chief of the guard took Jeremiah and said to him: "Jehovah your God foretold this calamity against this place, and Jehovah has brought it about just as he said, because you people sinned against Jehovah and did not obey his voice. That is why this has happened to you. Now I am releasing you today from the handcuffs that were on your hands. If it seems good to you to come with me to Babylon, come, and I will look after you. But if you do not want to come with me to Babylon, do not come. See! The entire land is before you. Go wherever you choose."</p></div>
+<p>When Jeremiah hesitated, Nebuzaradan suggested he return to Gedaliah, "or go wherever you choose," and sent him off with "a food allowance and a gift" (40:5). Insight: "Nebuzaradan, under orders from Nebuchadnezzar, released Jeremiah and spoke to him kindly, letting him choose what he would do, offering to look after him and granting him some supplies." (<em>it-2</em> 482)</p>
+<p><strong>Why did Jeremiah hesitate?</strong> "After his release by Nebuzaradan, he hesitated to leave those being taken into Babylonian exile, perhaps feeling that he should share their lot or desiring to serve their spiritual interests further." (<em>it-2</em> 31) He chose to stay with the poor people left in the land (40:6).</p>
+
+<h2><span class="num">3.</span>How Jeremiah was treated — his own people and the foreigners</h2>
+
+<p>"The princes of Jerusalem had imprisoned him, but the conquering Babylonians treated him kindly, freeing him." (<em>jr</em> 30 ¶25) Set side by side, the contrast is stark:</p>
+<table>
+  <tr><th>By his own people (Judah)</th><th>By the conquerors (Babylon)</th></tr>
+  <tr><td>Accused of deserting: "You are deserting to the Chaldeans!" (37:13)</td><td>Called a true prophet: "Jehovah your God foretold this calamity… just as he said" (40:2, 3)</td></tr>
+  <tr><td>Refused a hearing: "he did not listen to him" (37:14)</td><td>Given a choice: "If it seems good to you… Go wherever you choose" (40:4)</td></tr>
+  <tr><td>Beaten by the princes (37:15)</td><td>"Do him no harm" (39:12)</td></tr>
+  <tr><td>Held in a dungeon where he feared he would die (37:16, 20)</td><td>Taken out of confinement by Babylon's senior officials (39:13, 14)</td></tr>
+  <tr><td>Lowered into a cistern of mud to die (38:6)</td><td>Released from handcuffs (40:4)</td></tr>
+  <tr><td>A round loaf a day, "until all the bread in the city was gone" (37:21)</td><td>"A food allowance and a gift" (40:5)</td></tr>
+  <tr><td>Consulted secretly by a king who feared his princes (37:17; 38:16, 24-26)</td><td>"Grant whatever he asks of you" — an open order from Babylon's king (39:12)</td></tr>
+</table>
+
+<p><strong>Commentary — keeping it in balance.</strong></p>
+<ul class="benefit">
+  <li><strong>The irony is real.</strong> The clearest acknowledgment that Jeremiah had spoken for Jehovah came from a pagan general standing in the ruins. Judah's leaders never admitted it.</li>
+  <li><strong>But Nebuzaradan was not a worshipper of Jehovah.</strong> He was the man who burned Jehovah's house (52:13). His kindness was obedience to Nebuchadnezzar's order (<em>it-2</em> 482). He was simply the means Jehovah used, not a hero of faith.</li>
+  <li><strong>Not all of Judah was hostile.</strong> Ebed-melech (a foreigner, but in Zedekiah's service) risked his position to save him (38:7-13). Earlier, Ahikam son of Shaphan had protected him (26:24), and now Ahikam's son Gedaliah took him in (39:14). Jehovah always left him friends.</li>
+  <li><strong>Jehovah had promised this.</strong> Years earlier he told Jeremiah: "I will surely intercede for you in the time of calamity, In the time of distress against the enemy." (15:11) In the time of calamity, the enemy's own king issued the order to protect him.</li>
+</ul>
+<div class="verse"><span class="cite">Jeremiah 15:11</span><p>"Jehovah said: "I will surely minister to you for good; I will surely intercede for you in the time of calamity, In the time of distress against the enemy."</p></div>
+<p>Jesus warned that opposition can come from the people closest to us (Matt. 10:36). Yet Jehovah can still move outsiders to show kindness to his servants. Paul, a prisoner bound for Rome, found this: "Julius treated Paul with kindness and permitted him to go to his friends and enjoy their care." (Acts 27:3)</p>
+
+<h2><span class="num">4.</span>Jeremiah vindicated — every word came true</h2>
+
+<p>"Yes, Jeremiah's words regarding Judah and Jerusalem had come true. Rather than rejoice, God's prophet mourned the calamity of his people." (<em>jr</em> 29-30 ¶24) The man called a traitor was proved right on every point:</p>
+<table>
+  <tr><th>What Jeremiah said</th><th>What happened</th></tr>
+  <tr><td>Pharaoh's army "will have to go back to its land, Egypt" (37:7)</td><td>It did; the Chaldeans resumed the siege (37:11, 17; 38:28)</td></tr>
+  <tr><td>"The Chaldeans will come back… and capture it" (37:8; 34:22)</td><td>The wall was breached on the 9th day of the 4th month (39:2; 52:6, 7)</td></tr>
+  <tr><td>"He will burn it with fire" (21:10; 34:2; 37:8)</td><td>Nebuzaradan "burned down the house of Jehovah, the king's house, and all the houses of Jerusalem" (52:13)</td></tr>
+  <tr><td>Zedekiah "will see the king of Babylon eye to eye" (34:3; 32:4)</td><td>He was brought before Nebuchadnezzar at Riblah and sentenced (39:5; 52:9)</td></tr>
+  <tr><td>Ezekiel, at the same time: "I will bring him to Babylon… but he will not see it" (Ezek. 12:13)</td><td>He was blinded at Riblah and taken to Babylon, where he died (39:7; 52:11)</td></tr>
+  <tr><td>Those who remain "will die by the sword, by famine" (21:9)</td><td>"The famine was severe in the city, and there was no food" (52:6)</td></tr>
+  <tr><td>"Where, now, are your prophets…?" (37:19)</td><td>The prophets who promised peace were proved false</td></tr>
+  <tr><td>To Ebed-melech: "I will surely provide you with escape" (39:18)</td><td>He survived, as did Jeremiah and Baruch (<em>w08</em> 10/15 11 ¶18)</td></tr>
+  <tr><td>"They will not prevail against you, For 'I am with you'" (1:19)</td><td>Beaten, imprisoned, left in a cistern — and freed with a gift</td></tr>
+</table>
+<p>"What of the last king, Zedekiah? Jeremiah foretold that Zedekiah would be given into the hands of enemies, who would show no compassion… Yes, all these prophecies came true." (<em>jr</em> 158 ¶10) The final vindication came from Nebuzaradan's own lips: "Jehovah has brought it about just as he said" (40:3).</p>
+
+<h2><span class="num">5.</span>What does this account tell me about Jehovah?</h2>
+<ul class="benefit">
+  <li><strong>He warns, and warns again.</strong> At least five times during the siege Zedekiah was told plainly what would happen and how to avoid it (21:8-10; 34:2-5; 37:7-10, 17; 38:17-23). Jehovah does not want anyone to perish without knowing.</li>
+  <li><strong>His word does not bend to circumstances.</strong> When Babylon withdrew and the whole city relaxed, the message stayed exactly the same (37:9, 10).</li>
+  <li><strong>He provides for daily needs, even through reluctant hands.</strong> A king who would not obey still fed the prophet every day until the bread ran out (37:21).</li>
+  <li><strong>He gives hope in the middle of judgment.</strong> The field bought under siege was his pledge that "houses and fields and vineyards will again be bought in this land" (32:15).</li>
+  <li><strong>He can move even the powerful to protect his servants.</strong> A Babylonian king's order was the answer to a promise Jehovah had made decades before (15:11; 39:11, 12).</li>
+  <li><strong>He vindicates those who speak for him.</strong> Not every accusation is answered at once, but in time his servants are shown to have told the truth (40:2, 3).</li>
+</ul>
+<p><strong>For meditation:</strong> <em>Jeremiah spent many months in custody before he was proved right. How does that help me when I am misjudged and nothing seems to change?</em></p>
+
+<h2><span class="num">6.</span>Lessons we can learn</h2>
+<ul class="benefit">
+  <li><strong>Expect to be misunderstood, and answer calmly.</strong> "It is not true!" (37:14) was all Jeremiah said to a false charge. Jesus said we would be "lyingly" accused (Matt. 5:11, 12), and "all those desiring to live with godly devotion… will also be persecuted" (2 Tim. 3:12).</li>
+  <li><strong>Stay neutral when a nation is divided.</strong> Jeremiah took no side in Judah's war politics; he spoke only for Jehovah. "How often Jehovah's people in modern times have faced perils because of their conscientious refusal to get involved in political controversies! Clearly, Jeremiah's experience can fortify you to face trials and overcome them." (<em>jr</em> 28 ¶23)</li>
+  <li><strong>Never soften Jehovah's message to buy relief.</strong> "There is!… You will be given into the hand of the king of Babylon!" (37:17) came before his request for a better cell, not after.</li>
+  <li><strong>Use lawful, respectful means to seek fair treatment.</strong> "Listen, please, O my lord the king" (37:20). Jeremiah appealed, and the appeal was granted. Paul later did the same (Acts 25:10, 11).</li>
+  <li><strong>Trust Jehovah for today's bread.</strong> "Give us today our bread for this day" (Matt. 6:11). "Whatever happens, all who keep spiritual interests in first place and maintain a 'simple eye' need not be overly anxious." (<em>w08</em> 10/15 11 ¶17)</li>
+  <li><strong>Act on Jehovah's promises when the facts seem against them.</strong> Jeremiah bought land he would never farm in a country about to fall (32:9, 15).</li>
+  <li><strong>Do not be taken in by a lull.</strong> The city read Babylon's withdrawal as deliverance and went back to its old ways (34:11, 21). A pause before judgment is an opportunity to change, not proof that judgment has been cancelled.</li>
+  <li><strong>Accept kindness from unexpected sources, and keep your priorities.</strong> Jeremiah was offered comfort in Babylon but chose to stay with the poor of the land (40:4-6).</li>
+</ul>
+
+<h2>Comfort from Jehovah</h2>
+<p>The promise at the head of this note was given when Jeremiah was a young man. The siege is where it was tested hardest, and where it proved true. These scriptures carry the same comfort for us:</p>
+<div class="verse"><span class="cite">Jeremiah 15:20, 21</span><p>"I am making you a fortified copper wall to this people. They will certainly fight against you, But they will not prevail against you, For I am with you, to save you and to rescue you," declares Jehovah. "And I will rescue you from the hand of the wicked And redeem you from the palm of the ruthless."</p></div>
+<div class="verse"><span class="cite">Jeremiah 20:11</span><p>"But Jehovah was with me like a fearsome warrior. That is why those persecuting me will stumble and will not prevail. They will be put to great shame, for they will not succeed. Their everlasting humiliation will not be forgotten."</p></div>
+<div class="verse"><span class="cite">Lamentations 3:55-58</span><p>"I called out your name, O Jehovah, from the depths of the pit. Hear my voice; do not shut your ear to my cry for help, for relief. You drew near in the day that I called you. You said: "Do not be afraid." You have defended my cause, O Jehovah, you have redeemed my life."</p></div>
+<p class="note"><span class="flag">INFERENCE</span> Lamentations was written by Jeremiah after the fall (<em>it-2</em> 31). The words "from the depths of the pit" echo his time in the dungeon and the cistern, but the publications I consulted do not say that this passage refers to those events.</p>
+<div class="verse"><span class="cite">Isaiah 41:10</span><p>"Do not be afraid, for I am with you. Do not be anxious, for I am your God. I will fortify you, yes, I will help you, I will really hold on to you with my right hand of righteousness."</p></div>
+<div class="verse"><span class="cite">Hebrews 13:5, 6</span><p>"Let your way of life be free of the love of money, while you are content with the present things. For he has said: "I will never leave you, and I will never abandon you." So that we may be of good courage and say: "Jehovah is my helper; I will not be afraid. What can man do to me?"</p></div>
+<div class="verse"><span class="cite">2 Corinthians 4:8, 9</span><p>"We are hard-pressed in every way, but not cramped beyond movement; we are perplexed, but not absolutely with no way out; we are persecuted, but not abandoned; we are knocked down, but not destroyed."</p></div>
+<p>"At times in his long career Jeremiah became discouraged and required Jehovah's assurance, but even in adversity he did not forsake calling on Jehovah for help." (<em>it-2</em> 31) The same Jehovah who sent bread to the Courtyard of the Guard and freed his prophet from handcuffs at Ramah has said to us: "I will never leave you, and I will never abandon you."</p>
+
+<h2>Sources</h2>
+<p class="note">Verse text is the <em>New World Translation of the Holy Scriptures</em> (2013 Revision), extracted verbatim from the study Bible database (<code>Publications / nwtsty_E / nwtsty_E.db</code>, via <code>nwt_verse.py</code>) and machine-checked against it.</p>
+<ul>
+  <li><em>God's Word for Us Through Jeremiah</em> (<code>jr</code>): chap. 2 pp. 27-30 ¶22-25 and box p. 29 (Zedekiah); chap. 8 p. 93 ¶4; chap. 9 p. 113 ¶19; chap. 13 p. 158 ¶10. Local: <code>Theo Library / _text / jr_E</code>.</li>
+  <li><em>Insight on the Scriptures</em>: "Zedekiah" No. 4 (<em>it-2</em> 1226-1228); "Nebuzaradan" (<em>it-2</em> 482); "Jeremiah" No. 6 (<em>it-2</em> 30-31); "Prison" (<em>it-2</em> 690); "Lachish" (<em>it-2</em> 188); "Irijah" (<em>it-1</em> 1215); "Hanamel" (<em>it-1</em> 1026); "Hophra" (<em>it-1</em> 1140). Local: <code>Theo Library / it-1_E, it-2_E</code>.</li>
+  <li><em>The Watchtower</em>, October 15, 2008, pp. 10-11 ¶17-18, "Jehovah Watches Us for Our Good." Local: <code>Theo Library / w_E_20081015.pdf</code>.</li>
+  <li><em>The Watchtower</em>, March 1, 2004, p. 29, "Questions From Readers" (Hanamel's field). <em>Not in the Theo Library — read from wol.jw.org.</em></li>
+  <li><em>The Watchtower</em>, January 15, 1979, pp. 28-30, "Ebed-Melech—Man of Courage." <em>Not in the Theo Library — read from wol.jw.org.</em></li>
+  <li>Cross-references: 2 Kings 25:1-12; 2 Chronicles 36:11-21; Ezekiel 12:13; 17:12-15; Jeremiah 52:1-16.</li>
+</ul>
+</main>
+
+<script>
+(function(){
+  var DEFAULT_BOOK='Jeremiah';
+  var BOOKS={jer:'Jeremiah',jeremiah:'Jeremiah',zec:'Zechariah',zech:'Zechariah',zechariah:'Zechariah',
+    pet:'Peter',peter:'Peter',sam:'Samuel',samuel:'Samuel',chron:'Chronicles',chronicles:'Chronicles',
+    dan:'Daniel',daniel:'Daniel',la:'Lamentations',lam:'Lamentations',lamentations:'Lamentations',
+    isa:'Isaiah',isaiah:'Isaiah',eze:'Ezekiel',ezekiel:'Ezekiel',ps:'Psalms',psalm:'Psalms',psalms:'Psalms',
+    ge:'Genesis',gen:'Genesis',genesis:'Genesis',zep:'Zephaniah',zeph:'Zephaniah',zephaniah:'Zephaniah',
+    mt:'Matthew',matt:'Matthew',matthew:'Matthew',mic:'Micah',micah:'Micah',
+    ki:'Kings',kings:'Kings',ch:'Chronicles',heb:'Hebrews',hebrews:'Hebrews',
+    rom:'Romans',romans:'Romans',php:'Philippians',phil:'Philippians',philippians:'Philippians',
+    jas:'James',james:'James',ac:'Acts',acts:'Acts',joh:'John',john:'John',job:'Job',
+    co:'Corinthians',cor:'Corinthians',corinthians:'Corinthians',jon:'Jonah',jonah:'Jonah',am:'Amos',amos:'Amos',
+    de:'Deuteronomy',deu:'Deuteronomy',deut:'Deuteronomy',ex:'Exodus',exodus:'Exodus',
+    lu:'Luke',luke:'Luke',ga:'Galatians',gal:'Galatians',galatians:'Galatians',ho:'Hosea',hosea:'Hosea',
+    joe:'Joel',joel:'Joel',re:'Revelation',revelation:'Revelation',pr:'Proverbs',proverbs:'Proverbs',
+    ec:'Ecclesiastes',ne:'Nehemiah',nehemiah:'Nehemiah',ezr:'Ezra',ezra:'Ezra',ru:'Ruth',nu:'Numbers',josh:'Joshua',jos:'Joshua',joshua:'Joshua',prov:'Proverbs',mr:'Mark',mark:'Mark',
+    ti:'Timothy',tim:'Timothy',timothy:'Timothy',eph:'Ephesians',ephesians:'Ephesians',th:'Thessalonians',thess:'Thessalonians'};
+  function normBook(raw){
+    if(!raw) return null;
+    var s=raw.trim().replace(/\.+$/,'').trim(), num='';
+    var m=s.match(/^([123])\s+(.*)$/);
+    if(m){num=m[1]+' ';s=m[2];}
+    var key=s.toLowerCase().replace(/\./g,'').replace(/\s+/g,'');
+    var full=BOOKS[key];
+    return full?(num+full).trim():null;
+  }
+  function urlFor(book,ref){
+    return 'https://wol.jw.org/en/wol/l/r1/lp-e?q='+encodeURIComponent(book+' '+ref).replace(/%20/g,'+');
+  }
+  window.openScripture=function(e,url){
+    var coarse=false;
+    try{coarse=(window.matchMedia&&window.matchMedia('(pointer: coarse)').matches)||('ontouchstart' in window)||(((screen&&screen.width)||9999)<760);}catch(_){}
+    if(coarse){ e.preventDefault(); window.location.href=url; return false; } /* phones/tablets: navigate in the same tab (reliable in every mobile viewer) */
+    e.preventDefault();
+    var w=560,h=720;
+    var x=Math.max(0,((screen.width||1200)-w)/2), y=Math.max(0,((screen.height||800)-h)/2);
+    var win=window.open(url,'wolScripture','popup=yes,width='+w+',height='+h+',left='+x+',top='+y+',scrollbars=yes,resizable=yes');
+    if(win){try{win.focus();}catch(_){}}else{window.open(url,'_blank');}
+    return false;
+  };
+  var RE=/((?:[123]\s+)?[A-Za-z][A-Za-z]*\.?\s+)?(\d{1,3}:\d{1,3}(?:\s*[-\u2013]\s*\d{1,3}|,\s*\d{1,3})*)/g;
+  function linkify(node){
+    var text=node.nodeValue;
+    if(!/\d:\d/.test(text)) return;
+    RE.lastIndex=0;
+    var frag=document.createDocumentFragment(), last=0, m, made=false;
+    while((m=RE.exec(text))){
+      var whole=m[0], bookRaw=m[1], ref=m[2], start=m.index;
+      var book=normBook(bookRaw), linkStart, linkText, useBook;
+      if(book){linkStart=start;linkText=whole.replace(/\s+$/,'');useBook=book;}
+      else{linkStart=start+(bookRaw?bookRaw.length:0);linkText=ref;useBook=DEFAULT_BOOK;}
+      if(linkStart>last) frag.appendChild(document.createTextNode(text.slice(last,linkStart)));
+      var refClean=ref.replace(/\s+/g,' ').trim();
+      var a=document.createElement('a');
+      a.href=urlFor(useBook,refClean);
+      a.className='scripture';
+      a.target='_blank';
+      a.rel='noopener noreferrer';
+      a.textContent=linkText;
+      a.title='Look up '+useBook+' '+refClean+' on wol.jw.org';
+      a.onclick=function(e){return openScripture(e,this.href);};
+      frag.appendChild(a);
+      last=linkStart+linkText.length; made=true;
+    }
+    if(!made) return;
+    if(last<text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    node.parentNode.replaceChild(frag,node);
+  }
+  var SKIP={A:1,CODE:1,SCRIPT:1,STYLE:1,TITLE:1,BUTTON:1,H1:1};
+  var root=document.querySelector('main')||document.body;
+  var walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+    var p=n.parentNode;
+    while(p&&p!==root){if(SKIP[p.nodeName]) return NodeFilter.FILTER_REJECT; p=p.parentNode;}
+    return /\d:\d/.test(n.nodeValue)?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;
+  }});
+  var nodes=[],n; while((n=walker.nextNode())) nodes.push(n);
+  nodes.forEach(linkify);
+})();
+</script>
+</body>
+</html>
