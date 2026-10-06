@@ -1,7 +1,7 @@
 # Bible Study Notes
 
 Static GitHub Pages site for the weekly Bible-reading study notes
-(currently Jeremiah 20–46), plus a character study and two background reports.
+(currently Jeremiah 20–46).
 Scripture quotations are from the *New World Translation of the Holy Scriptures* (2013 Revision).
 
 - Live site: <https://theoscholar.github.io/biblestudynotes/>

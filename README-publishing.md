@@ -8,8 +8,8 @@ folder (`..\Bible Study Notes\`), then run the publish script — it copies them
 under their clean published names, commits, and pushes.
 
 Currently published: **14 Jeremiah guides** (chapters 20–46, plus the combined
-"Under Siege" study of chapters 21, 32, 34, 37–40), the Daniel-and-companions
-character study, and the Botswana and South Africa reports.
+"Under Siege" study of chapters 21, 32, 34, 37–40). Character studies are on
+the biblecharacters site; country reports on the africa site.
 
 ---
 
